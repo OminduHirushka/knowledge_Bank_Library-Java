@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" style="-fx-background-image: main.jpg;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView blendMode="SRC_ATOP" cache="true" fitHeight="691.0" fitWidth="1398.0" layoutX="-264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/main.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="-4.0" prefHeight="107.0" prefWidth="917.0" style="-fx-background-color: #40739e;" text="United Library" textAlignment="CENTER">
+         <font>
+            <Font name="AHFox" size="76.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="305.0" layoutY="472.0" prefHeight="98.0" prefWidth="259.0" style="-fx-background-color: #ee5253; -fx-background-radius: 60;" text="START" textAlignment="CENTER">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
