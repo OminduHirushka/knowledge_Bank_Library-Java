@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CategoryContoller">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="108.0" prefWidth="910.0" style="-fx-background-color: #60a3bc; -fx-font-size: 60;" text="CATEGORIES" textAlignment="CENTER" textFill="#0a242b" wrapText="true">
          <font>
