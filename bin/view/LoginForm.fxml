@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
       <ImageView blendMode="SRC_ATOP" fitHeight="736.0" fitWidth="1348.0" layoutX="-392.0" layoutY="-68.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -48,12 +47,17 @@
                   <Font size="22.0" />
                </font>
             </TextField>
-            <JFXButton alignment="CENTER" layoutX="171.0" layoutY="255.0" prefHeight="51.0" prefWidth="132.0" style="-fx-background-color: #ee5253; -fx-background-radius: 20;" text="Log-In">
+            <JFXButton alignment="CENTER" layoutX="171.0" layoutY="255.0" onAction="#btnLoginOnAction" prefHeight="51.0" prefWidth="132.0" style="-fx-background-color: #ee5253; -fx-background-radius: 20;" text="Log-In">
                <font>
                   <Font name="SansSerif Regular" size="29.0" />
                </font>
             </JFXButton>
          </children>
       </Pane>
+      <ImageView fitHeight="52.0" fitWidth="61.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#btnBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/back.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -11,13 +11,12 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class MainController {
-
+public class DashboardController {
     @FXML
     private AnchorPane root;
-    
+
     @FXML
-    void btnStartOnAction(ActionEvent event) throws IOException {
+    void btnLogoutOnAction(ActionEvent event) throws IOException {
         URL resource = getClass().getResource("/view/LoginForm.fxml");
         Parent root = FXMLLoader.load(resource);
 

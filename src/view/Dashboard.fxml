@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <ImageView blendMode="SRC_ATOP" fitHeight="629.0" fitWidth="979.0" layoutX="-25.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/dashboard.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutY="24.0" prefHeight="92.0" prefWidth="910.0" style="-fx-background-color: #d1d8e0; -fx-opacity: 0.9;" text="DASHBOARD" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="MS Reference Sans Serif" size="70.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="35.0" layoutY="223.0" onAction="#btnMembersOnAction" prefHeight="59.0" prefWidth="218.0" style="-fx-background-color: #58B19F; -fx-background-radius: 12;" text="Members">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="660.0" layoutY="223.0" onAction="#btnBooksOnAction" prefHeight="59.0" prefWidth="218.0" style="-fx-background-color: #F8EFBA; -fx-background-radius: 12;" text="Books">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="35.0" layoutY="350.0" onAction="#btnBorrowingsOnAction" prefHeight="59.0" prefWidth="218.0" style="-fx-background-color: #BDC581; -fx-background-radius: 12;" text="Borrowings">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="660.0" layoutY="350.0" onAction="#btnCategoriesOnAction" prefHeight="59.0" prefWidth="218.0" style="-fx-background-color: #FEA47F; -fx-background-radius: 12;" text="Categories">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="355.0" layoutY="495.0" onAction="#btnFinesOnAction" prefHeight="59.0" prefWidth="218.0" style="-fx-background-color: #74b9ff; -fx-background-radius: 12;" text="Fines">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="789.0" layoutY="549.0" onAction="#btnLogoutOnAction" prefHeight="29.0" prefWidth="106.0" style="-fx-background-color: #eb3b5a;" text="Log Out">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
