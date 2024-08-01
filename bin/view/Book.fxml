@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookController">
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookControllerFxml">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="108.0" prefWidth="910.0" style="-fx-background-color: #60a3bc; -fx-font-size: 60;" text="BOOKS" textAlignment="CENTER" textFill="#0a242b" wrapText="true">
          <font>
@@ -37,11 +37,11 @@
       <TableView fx:id="tblBooks" layoutX="28.0" layoutY="353.0" prefHeight="236.0" prefWidth="862.0">
          <columns>
             <TableColumn fx:id="colID" prefWidth="70.0" text="ID" />
-            <TableColumn fx:id="colName" prefWidth="188.0" text="Title" />
-            <TableColumn fx:id="colAddress" prefWidth="254.0" text="Description" />
-            <TableColumn fx:id="colMobile" minWidth="0.0" prefWidth="81.0" text="Category ID" />
-            <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="181.0" text="Author" />
-            <TableColumn fx:id="colAction1" minWidth="0.0" prefWidth="91.2000732421875" text="NoB" />
+            <TableColumn fx:id="colTitle" prefWidth="188.0" text="Title" />
+            <TableColumn fx:id="colDescription" prefWidth="254.0" text="Description" />
+            <TableColumn fx:id="colCatID" minWidth="0.0" prefWidth="81.0" text="Category ID" />
+            <TableColumn fx:id="colAuthor" minWidth="0.0" prefWidth="181.0" text="Author" />
+            <TableColumn fx:id="colNb" minWidth="0.0" prefWidth="91.2000732421875" text="NoB" />
          </columns>
       </TableView>
       <Button layoutX="791.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnShowAllBooksOnAction" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #474787;" text="Show All Books" textFill="WHITE" />

@@ -1,99 +1,33 @@
 package controller;
 
-import java.io.IOException;
-import java.net.URL;
+import java.util.ArrayList;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
+import dto.BookDto;
+import service.ServiceFactory;
+import service.custom.BookService;
 
 public class BookController {
 
-    @FXML
-    private TableColumn<?, ?> colAction;
+    private BookService bookService = (BookService) ServiceFactory.getInstance().getService(ServiceFactory.ServiceType.BOOK);
 
-    @FXML
-    private TableColumn<?, ?> colAction1;
-
-    @FXML
-    private TableColumn<?, ?> colAddress;
-
-    @FXML
-    private TableColumn<?, ?> colID;
-
-    @FXML
-    private TableColumn<?, ?> colMobile;
-
-    @FXML
-    private TableColumn<?, ?> colName;
-
-    @FXML
-    private AnchorPane root;
-
-    @FXML
-    private TableView<?> tblBooks;
-
-    @FXML
-    private TextField txtAuthor;
-
-    @FXML
-    private TextField txtBookID;
-
-    @FXML
-    private TextField txtCatID;
-
-    @FXML
-    private TextArea txtDescription;
-
-    @FXML
-    private TextField txtNumOfBooks;
-
-    @FXML
-    private TextField txtTitle;
-
-    @FXML
-    void btnBack(MouseEvent event) throws IOException {
-        URL resource = getClass().getResource("/view/Dashboard.fxml");
-        Parent root = FXMLLoader.load(resource);
-
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.show();
-        stage.setTitle("Dashboard");
+    public String save(BookDto bookDto) throws Exception {
+        return bookService.save(bookDto);
     }
 
-    @FXML
-    void btnAddOnAction(ActionEvent event) {
-
+    public String update(BookDto bookDto) throws Exception {
+        return bookService.update(bookDto);
     }
 
-    @FXML
-    void btnClearOnAction(ActionEvent event) {
-
+    public String delete(String bookID) throws Exception {
+        return bookService.delete(bookID);
     }
 
-    @FXML
-    void btnDeleteOnAction(ActionEvent event) {
-
+    public BookDto get(String bookID) throws Exception {
+        return bookService.get(bookID);
     }
 
-    @FXML
-    void btnShowAllBooksOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void btnUpdateOnAction(ActionEvent event) {
-
+    public ArrayList<BookDto> getAll() throws Exception {
+        return bookService.getAll();
     }
 
 }

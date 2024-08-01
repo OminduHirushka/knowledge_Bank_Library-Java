@@ -1,5 +1,6 @@
 package service;
 
+import service.custom.impl.BookServiceImpl;
 import service.custom.impl.CategoryServiceImpl;
 
 public class ServiceFactory {
@@ -20,13 +21,15 @@ public class ServiceFactory {
         switch (serviceType) {
             case CATEGORY:
                 return new CategoryServiceImpl();
+            case BOOK:
+                return new BookServiceImpl();
             default:
                 return null;
         }
     }
 
     public enum ServiceType {
-        CATEGORY
+        CATEGORY, BOOK
     }
-    
+
 }

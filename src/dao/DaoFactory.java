@@ -1,5 +1,6 @@
 package dao;
 
+import dao.custom.impl.BookDaoImpl;
 import dao.custom.impl.CategoryDaoImpl;
 
 public class DaoFactory {
@@ -20,13 +21,15 @@ public class DaoFactory {
         switch (type) {
             case CATEGORY:
                 return new CategoryDaoImpl();
+            case BOOK:
+                return new BookDaoImpl();
             default:
                 return null;
         }
     }
 
     public enum DaoTypes {
-        CATEGORY;
+        CATEGORY, BOOK
     }
 
 }
