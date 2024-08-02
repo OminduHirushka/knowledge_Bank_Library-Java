@@ -11,19 +11,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BorrowingController">
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BorrowingControllerFxml">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="108.0" prefWidth="910.0" style="-fx-background-color: #60a3bc; -fx-font-size: 60;" text="BORROWINGS" textAlignment="CENTER" textFill="#0a242b" wrapText="true">
          <font>
             <Font name="Microsoft Himalaya" size="60.0" />
          </font>
       </Label>
-      <TextField fx:id="txtBookID" layoutX="324.0" layoutY="153.0" prefHeight="50.0" prefWidth="270.0" promptText="Book ID">
+      <TextField fx:id="txtBorrowingID" layoutX="26.0" layoutY="153.0" prefHeight="50.0" prefWidth="270.0" promptText="Borrowing ID">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtBorrowingID" layoutX="26.0" layoutY="153.0" prefHeight="50.0" prefWidth="270.0" promptText="Borrowing ID">
+      <TextField fx:id="txtBookID" layoutX="324.0" layoutY="153.0" prefHeight="50.0" prefWidth="270.0" promptText="Book ID">
          <font>
             <Font size="15.0" />
          </font>
@@ -36,12 +36,12 @@
       <TableView fx:id="tblBorrowings" layoutX="28.0" layoutY="353.0" prefHeight="236.0" prefWidth="862.0">
          <columns>
             <TableColumn fx:id="colID" prefWidth="58.4000244140625" text="ID" />
-            <TableColumn fx:id="colName" prefWidth="65.5999755859375" text="Book ID" />
-            <TableColumn fx:id="colAddress" prefWidth="83.99996948242188" text="Member ID" />
-            <TableColumn fx:id="colMobile" minWidth="0.0" prefWidth="168.79998779296875" text="Borrowing Date" />
-            <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="168.0" text="Due Date" />
-            <TableColumn fx:id="colAction1" minWidth="0.0" prefWidth="161.5999755859375" text="Return Date" />
-            <TableColumn fx:id="colAction11" minWidth="0.0" prefWidth="168.7999267578125" text="Status" />
+            <TableColumn fx:id="colBookID" prefWidth="65.5999755859375" text="Book ID" />
+            <TableColumn fx:id="colMemberID" prefWidth="83.99996948242188" text="Member ID" />
+            <TableColumn fx:id="colBrDate" minWidth="0.0" prefWidth="168.79998779296875" text="Borrowing Date" />
+            <TableColumn fx:id="colDueDate" minWidth="0.0" prefWidth="168.0" text="Due Date" />
+            <TableColumn fx:id="colRetDate" minWidth="0.0" prefWidth="161.5999755859375" text="Return Date" />
+            <TableColumn fx:id="colStatus" minWidth="0.0" prefWidth="168.7999267578125" text="Status" />
          </columns>
       </TableView>
       <JFXButton layoutX="324.0" layoutY="288.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #78e08f; -fx-background-radius: 18;" text="Add">
