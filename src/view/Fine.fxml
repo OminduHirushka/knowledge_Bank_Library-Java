@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FineController">
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FineControllerFxml">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="108.0" prefWidth="910.0" style="-fx-background-color: #60a3bc; -fx-font-size: 60;" text="FINES" textAlignment="CENTER" textFill="#0a242b" wrapText="true">
          <font>
@@ -36,11 +36,11 @@
       <TableView fx:id="tblFines" layoutX="28.0" layoutY="353.0" prefHeight="236.0" prefWidth="862.0">
          <columns>
             <TableColumn fx:id="colID" prefWidth="58.4000244140625" text="ID" />
-            <TableColumn fx:id="colName" prefWidth="85.60000610351562" text="Borrowing ID" />
-            <TableColumn fx:id="colMobile" minWidth="0.0" prefWidth="152.79998779296875" text="Fine Amount" />
-            <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="175.20001220703125" text="Issued Date" />
-            <TableColumn fx:id="colAction1" minWidth="0.0" prefWidth="188.79998779296875" text="Paid Date" />
-            <TableColumn fx:id="colAction11" minWidth="0.0" prefWidth="200.0" text="Status" />
+            <TableColumn fx:id="colBrID" prefWidth="85.60000610351562" text="Borrowing ID" />
+            <TableColumn fx:id="colFine" minWidth="0.0" prefWidth="152.79998779296875" text="Fine Amount" />
+            <TableColumn fx:id="colIssuedDate" minWidth="0.0" prefWidth="175.20001220703125" text="Issued Date" />
+            <TableColumn fx:id="colPaidDate" minWidth="0.0" prefWidth="188.79998779296875" text="Paid Date" />
+            <TableColumn fx:id="colStatus" minWidth="0.0" prefWidth="200.0" text="Status" />
          </columns>
       </TableView>
       <Button layoutX="799.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnShowAllFinesOnAction" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #474787;" text="Show All Fines" textFill="WHITE" />

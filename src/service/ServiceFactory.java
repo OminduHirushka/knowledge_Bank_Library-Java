@@ -3,6 +3,7 @@ package service;
 import service.custom.impl.BookServiceImpl;
 import service.custom.impl.BorrowingServiceImpl;
 import service.custom.impl.CategoryServiceImpl;
+import service.custom.impl.FineServiceImpl;
 import service.custom.impl.MemberServiceImpl;
 
 public class ServiceFactory {
@@ -29,13 +30,15 @@ public class ServiceFactory {
                 return new MemberServiceImpl();
             case BORROWING:
                 return new BorrowingServiceImpl();
+            case FINE:
+                return new FineServiceImpl();
             default:
                 return null;
         }
     }
 
     public enum ServiceType {
-        CATEGORY, BOOK, MEMBER, BORROWING
+        CATEGORY, BOOK, MEMBER, BORROWING, FINE
     }
 
 }
