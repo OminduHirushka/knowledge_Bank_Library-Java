@@ -1,7 +1,5 @@
 package controller;
 
-import java.util.ArrayList;
-
 import dto.BorrowingDto;
 import service.ServiceFactory;
 import service.custom.BorrowingService;
@@ -20,14 +18,6 @@ public class BorrowingController {
 
     public String delete(String brID) throws Exception {
         return borrowingService.delete(brID);
-    }
-
-    public BorrowingDto get(String brID) throws Exception {
-        return borrowingService.get(brID);
-    }
-
-    public ArrayList<BorrowingDto> getAll() throws Exception {
-        return borrowingService.getAll();
     }
 
 }

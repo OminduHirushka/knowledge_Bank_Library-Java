@@ -1,7 +1,5 @@
 package controller;
 
-import java.util.ArrayList;
-
 import dto.MemberDto;
 import service.ServiceFactory;
 import service.custom.MemberService;
@@ -20,14 +18,6 @@ public class MemberController {
 
     public String delete(String bookID) throws Exception {
         return memberService.delete(bookID);
-    }
-
-    public MemberDto get(String bookID) throws Exception {
-        return memberService.get(bookID);
-    }
-
-    public ArrayList<MemberDto> getAll() throws Exception {
-        return memberService.getAll();
     }
 
 }

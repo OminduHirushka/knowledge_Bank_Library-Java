@@ -1,7 +1,5 @@
 package dao.custom.impl;
 
-import java.util.ArrayList;
-
 import dao.CrudUtil;
 import dao.custom.FineDao;
 import entity.FineEntity;
@@ -24,16 +22,6 @@ public class FineDaoImpl implements FineDao {
     @Override
     public boolean delete(String id) throws Exception {
         return CrudUtil.executeUpdate("DELETE FROM fine WHERE fineID = ?", id);
-    }
-
-    @Override
-    public FineEntity get(String id) throws Exception {
-        throw new UnsupportedOperationException("Unimplemented method 'get'");
-    }
-
-    @Override
-    public ArrayList<FineEntity> getAll() throws Exception {
-        throw new UnsupportedOperationException("Unimplemented method 'getAll'");
     }
 
 }

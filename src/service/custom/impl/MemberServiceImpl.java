@@ -1,7 +1,5 @@
 package service.custom.impl;
 
-import java.util.ArrayList;
-
 import dao.DaoFactory;
 import dao.custom.MemberDao;
 import dto.MemberDto;
@@ -14,18 +12,10 @@ public class MemberServiceImpl implements MemberService {
 
     private MemberEntity getMemberEntity(MemberDto memberDto) {
         return new MemberEntity(
-            memberDto.getMemberID(),
-            memberDto.getName(),
-            memberDto.getAddress(),
-            memberDto.getMobile());
-    }
-
-    private MemberDto getMemberDto(MemberEntity entity) {
-        return new MemberDto(
-            entity.getMemberID(),
-            entity.getName(),
-            entity.getAddress(),
-            entity.getMobile());
+                memberDto.getMemberID(),
+                memberDto.getName(),
+                memberDto.getAddress(),
+                memberDto.getMobile());
     }
 
     @Override
@@ -45,30 +35,4 @@ public class MemberServiceImpl implements MemberService {
         return memberDao.delete(memberID) ? "Success" : "Fail";
     }
 
-    @Override
-    public MemberDto get(String memberID) throws Exception {
-        MemberEntity entity = memberDao.get(memberID);
-
-        if (entity != null) {
-            return getMemberDto(entity);
-        }
-        return null;
-    }
-
-    @Override
-    public ArrayList<MemberDto> getAll() throws Exception {
-        ArrayList<MemberEntity> memberEntities = memberDao.getAll();
-
-        if (memberEntities != null && !memberEntities.isEmpty()) {
-            ArrayList<MemberDto> memberDtos = new ArrayList<>();
-
-            for (MemberEntity memberEntity : memberEntities) {
-                memberDtos.add(getMemberDto(memberEntity));
-            }
-            return memberDtos;
-        }
-
-        return null;
-    }
-    
 }
