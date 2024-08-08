@@ -32,7 +32,7 @@
                   <Font name="Serif Regular" size="30.0" />
                </font>
             </Label>
-            <TextField layoutX="194.0" layoutY="69.0" prefHeight="40.0" prefWidth="235.0">
+            <TextField fx:id="txtUserName" layoutX="194.0" layoutY="69.0" prefHeight="40.0" prefWidth="235.0">
                <font>
                   <Font size="22.0" />
                </font>
@@ -42,7 +42,7 @@
                   <Font name="Serif Regular" size="30.0" />
                </font>
             </Label>
-            <TextField layoutX="194.0" layoutY="150.0" prefHeight="40.0" prefWidth="235.0">
+            <TextField fx:id="txtPassword" layoutX="194.0" layoutY="150.0" prefHeight="40.0" prefWidth="235.0">
                <font>
                   <Font size="22.0" />
                </font>
